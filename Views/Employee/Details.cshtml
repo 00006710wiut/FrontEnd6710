@@ -1,0 +1,72 @@
+﻿@model DSCC_CW1_6710_1.Models.Employee
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Employee</h4>
+    <hr />
+	<dl class="dl-horizontal">
+		<dt>
+			@Html.DisplayNameFor(model => model.FirstName)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.FirstName)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.LastName)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.LastName)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.Age)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.Age)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.PlaceOfBirth)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.PlaceOfBirth)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.PassportSeria)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.PassportSeria)
+		</dd>
+		<dt>
+			@Html.DisplayNameFor(model => model.JobQualification)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.JobQualification.Name)
+		</dd>
+		<dt>
+			@Html.DisplayNameFor(model => model.JobQualification.YearOfExperience)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.JobQualification.YearOfExperience)
+		</dd>
+
+	</dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
